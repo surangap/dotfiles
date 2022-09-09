@@ -1,17 +1,29 @@
 #!/usr/bin/env bash
 
+#set -x;
+
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin main;
+#function doIt() {
+#	rsync --exclude ".git/" \
+#		--exclude ".DS_Store" \
+#		--exclude ".osx" \
+#		--exclude "bootstrap.sh" \
+#		--exclude "README.md" \
+#		--exclude "LICENSE-MIT.txt" \
+#		-avh --no-perms . ~;
+#	source ~/.bash_profile;
+#}
 
 function doIt() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude ".osx" \
-		--exclude "bootstrap.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
-		-avh --no-perms . ~;
+	rsync .bash_profile \
+	      .bash_prompt \
+	      .bashrc \
+	      .exports \
+	      .extra \
+	      .path \
+	      .aliases \
+	      ~;
 	source ~/.bash_profile;
 }
 
