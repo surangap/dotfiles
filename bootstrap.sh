@@ -23,6 +23,7 @@ function doIt() {
 	      .extra \
 	      .path \
 	      .aliases \
+	      .tmux.conf \
 	      ~;
 	source ~/.bash_profile;
 }
