@@ -3,6 +3,7 @@
 #set -x;
 
 cd "$(dirname "${BASH_SOURCE}")";
+abs_path=$(realpath .)
 
 #function doIt() {
 #	rsync --exclude ".git/" \
@@ -16,15 +17,20 @@ cd "$(dirname "${BASH_SOURCE}")";
 #}
 
 function doIt() {
-	rsync .bash_profile \
-	      .bash_prompt \
-	      .bashrc \
-	      .exports \
-	      .extra \
-	      .path \
-	      .aliases \
-	      .tmux.conf \
-	      ~;
+#	rsync .bash_profile \
+#	      .bash_prompt \
+#	      .bashrc \
+#	      .exports \
+#	      .extra \
+#	      .path \
+#	      .aliases \
+#	      .tmux.conf \
+#	      ~;
+# create the symlinks. single point of update.
+  for file in .{bash_profile,bash_prompt,bashrc,exports,extra,path,aliases,tmux.conf}; do
+    ln -s "$abs_path/$file" ~/"$file"
+  done;
+  unset file;
 	source ~/.bash_profile;
 }
 

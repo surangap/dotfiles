@@ -12,6 +12,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias w="cd ~/work"
 alias g="git"
+alias s="cd ~/work/seed"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -71,3 +72,5 @@ alias L="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/
 alias path='echo -e ${PATH//:/\\n}'
 
 alias v="vim"
+
+
