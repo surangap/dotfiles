@@ -10,7 +10,14 @@ rustup target add wasm32-unknown-unknown
 brew install node
 brew install lerna
 npm i -g typescript yarn
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 brew install tmux
 brew install wget
 brew install vim
+
+#solidity
+npm install --save-dev hardhat
+
+#docker
+brew install docker

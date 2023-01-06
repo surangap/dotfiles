@@ -73,4 +73,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias v="vim"
 
+alias ds="./target/debug/seed --chain=chain-spec/porcini.json --base-path=./data/spf-host --name=spf-host --rpc-methods=unsafe --unsafe-ws-external --unsafe-rpc-external --rpc-cors=all --telemetry-url=\"wss://telemetry.rootnet.app:9443/submit 0\" --bootnodes=/dns4/bootnode-0.cicd.rootnet.app/tcp/30333/p2p/12D3KooWApbepSHWhDzqz9GWFXzKWiWQmkhAVUdW9KBG5K8vNWxJ --bootnodes=/dns4/bootnode-1.cicd.rootnet.app/tcp/30333/p2p/12D3KooWPQV5rvHSVeiiVpqKP5ksaUoohQwvJhLuoeHmHkKgK3My"
 
+alias cs="cargo build"
+alias cn="cargo +nightly build"
