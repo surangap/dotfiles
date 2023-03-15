@@ -3,7 +3,7 @@
 #set -x;
 
 cd "$(dirname "${BASH_SOURCE}")";
-abs_path=$(realpath .)
+abs_path=$(pwd)
 
 #function doIt() {
 #	rsync --exclude ".git/" \

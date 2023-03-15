@@ -12,7 +12,15 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias w="cd ~/work"
 alias g="git"
-alias s="cd ~/work/seed"
+alias s="cd ~/work/fv/trn-seed"
+alias t="cd ~/work/tmp"
+alias f="cd ~/work/fv"
+alias z="cd ~/work/fv/cennznet"
+
+#GH related
+alias gsp="git gsp "
+alias gsg="git gsg "
+alias gsl="git stash list"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
