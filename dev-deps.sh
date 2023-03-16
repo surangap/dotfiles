@@ -1,27 +1,30 @@
 #!/usr/bin/env bash
+set -e
 
 #rust for substrate
-#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rustup update
-rustup update nightly
-rustup target add wasm32-unknown-unknown
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# source "$HOME/.cargo/env"
+# rustup update
+# rustup update nightly
+# rustup target add wasm32-unknown-unknown
 
 #node
-brew install node
-brew install lerna
+sudo apt-get install nodejs
+sudo apt install npm
+sudo npm install lerna
 npm i -g typescript yarn
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-brew install tmux
-brew install wget
-brew install vim
-brew install cmake
+sudo apt-get install tmux
+sudo apt-get install wget
+sudo apt-get install vim
+sudo apt-get install cmake
 
-#solidity
-npm install --save-dev hardhat
+# #solidity
+# npm install --save-dev hardhat
 
 #docker
-brew install docker
+sudo apt-get install docker
 
 #gpg
-brew install gpg
+sudo apt-get install gpg

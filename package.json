@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "hardhat": "^2.12.6"
+  },
+  "dependencies": {
+    "lerna": "^6.5.1"
   }
 }
