@@ -27,7 +27,7 @@ function doIt() {
 #	      .tmux.conf \
 #	      ~;
 # create the symlinks. single point of update.
-  for file in .{bash_profile,bash_prompt,bashrc,exports,extra,path,aliases,tmux.conf}; do
+  for file in .{bash_profile,bash_prompt,bashrc,exports,path,aliases}; do
     ln -s "$abs_path/$file" ~/"$file"
   done;
   unset file;

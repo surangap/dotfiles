@@ -12,10 +12,8 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias w="cd ~/work"
 alias g="git"
-alias s="cd ~/work/fv/trn-seed"
 alias t="cd ~/work/tmp"
-alias f="cd ~/work/fv"
-alias z="cd ~/work/fv/cennznet"
+alias f="cd ~/work/fun"
 
 #GH related
 alias gsp="git gsp "
@@ -81,7 +79,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias v="vim"
 
-alias ds="./target/debug/seed --chain=chain-spec/porcini.json --base-path=./data/spf-host --name=spf-host --rpc-methods=unsafe --unsafe-ws-external --unsafe-rpc-external --rpc-cors=all --telemetry-url=\"wss://telemetry.rootnet.app:9443/submit 0\" --bootnodes=/dns4/bootnode-0.cicd.rootnet.app/tcp/30333/p2p/12D3KooWApbepSHWhDzqz9GWFXzKWiWQmkhAVUdW9KBG5K8vNWxJ --bootnodes=/dns4/bootnode-1.cicd.rootnet.app/tcp/30333/p2p/12D3KooWPQV5rvHSVeiiVpqKP5ksaUoohQwvJhLuoeHmHkKgK3My"
+# alias ds="./target/debug/seed --chain=chain-spec/porcini.json --base-path=./data/spf-host --name=spf-host --rpc-methods=unsafe --unsafe-ws-external --unsafe-rpc-external --rpc-cors=all --telemetry-url=\"wss://telemetry.rootnet.app:9443/submit 0\" --bootnodes=/dns4/bootnode-0.cicd.rootnet.app/tcp/30333/p2p/12D3KooWApbepSHWhDzqz9GWFXzKWiWQmkhAVUdW9KBG5K8vNWxJ --bootnodes=/dns4/bootnode-1.cicd.rootnet.app/tcp/30333/p2p/12D3KooWPQV5rvHSVeiiVpqKP5ksaUoohQwvJhLuoeHmHkKgK3My"
 
 alias cs="cargo build"
 alias cn="cargo +nightly build"

@@ -1,0 +1,3 @@
+- Make sure brew is installed in the system
+- Execute `source ./bootstrap.sh` first
+- Then execute the dev-deps.sh
